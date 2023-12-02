@@ -11,7 +11,7 @@ const getProducts = async (query) => {
             isFeatured: query.isFeatured,
         },
     })
-    return (await fetch(URL)).json()
+    return (await fetch(url)).json()
 };
 
 export default getProducts;
