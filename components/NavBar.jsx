@@ -1,4 +1,4 @@
-import Container from "@/components/ui/container";
+import Container from "@/components/ui/Container";
 import Link from "next/link";
 import MainNav from "@/components/MainNav";
 import getCategories from "@/actions/GetCategories";
