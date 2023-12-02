@@ -17,6 +17,7 @@ const Button = forwardRef(({
                 )
             }
             ref={ref}
+            {...props}
         >
             {children}
         </button>
