@@ -1,6 +1,7 @@
 'use client'
 
 import Button from "@/components/ui/Button";
+import useCart from "@/hooks/useCart";
 import { ShoppingBag } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -9,6 +10,8 @@ const NavbarActions = () => {
     useEffect(() => {
         setIsMounted(true)
     }, [])
+    const cart = useCart()
+
     if (!isMounted) {
         return null
     }
@@ -20,7 +23,9 @@ const NavbarActions = () => {
                     size={20}
                     color="white"
                 />
-                <span className="ml-2 text-sm font-medium text-white">0</span>
+                <span className="ml-2 text-sm font-medium text-white">
+                    {cart.items.length}
+                </span>
             </Button>
         </div>
     );
