@@ -16,6 +16,7 @@ const Button = forwardRef(({
                     className
                 )
             }
+            disabled={disabled}
             ref={ref}
             {...props}
         >
