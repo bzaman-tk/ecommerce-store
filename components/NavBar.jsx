@@ -1,8 +1,8 @@
 import Container from "@/components/ui/Container";
 import Link from "next/link";
 import MainNav from "@/components/MainNav";
-import getCategories from "@/actions/GetCategories";
 import NavbarActions from "@/components/NavbarActions";
+import getCategories from "@/actions/getCategories";
 
 export const revalidate = 0;
 
